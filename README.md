@@ -2,15 +2,28 @@
 
 master micro intern task1: an interactive function plotter built using HTML , CSS  , vanilla JS  
 
-## 🏁 Watch Live
-https://omar214.github.io/function-plotter-/
+## 🏁 Get Started <a name = "Install"></a>
 
+```
+https://github.com/omar214/function-plotter-.git
+```
+```
+cd function-plotter-
+```
+```
+open index.html
+```
 
 ## 💻 Built Using <a name = "tech"></a>
 
 - **HTML**
 - **CSS**
 - **Vanilla JS**
+
+## ✨ Watch Live
+https://omar214.github.io/function-plotter-/
+
+
 
 ## 📷 Screenshots
  <div name="Screenshots" align="center">                     
