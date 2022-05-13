@@ -3,6 +3,7 @@
 master micro intern task1: an interactive function plotter built using HTML , CSS  , vanilla JS  
 
 ## 🏁 Watch Live
+https://omar214.github.io/function-plotter-/
 
 
 ## 💻 Built Using <a name = "tech"></a>
