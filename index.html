@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/index.css" />
+		<title>Master Micro task1</title>
+	</head>
+	<body onload="plot();">
+		<h2>Interactive function plotter</h2>
+		<div class="layer">
+			<!-- section for plot settings -->
+			<section id="plotSettings">
+				<label for="xMin">min X : </label>
+				<input type="number" id="xMin" value="-5" step="1" oninput="plot();" />
+
+				<label for="xMin">max X : </label>
+				<input type="number" id="xMax" value="5" step="1" oninput="plot();" />
+
+				<label for="yMin">min Y : </label>
+				<input type="number" id="yMin" value="-10" step="1" oninput="plot();" />
+
+				<label for="yMax">max Y : </label>
+				<input type="number" id="yMax" value="10" step="1" oninput="plot();" />
+
+				<div class="row">
+					<label for="color">Color: </label>
+					<div class="input-color-container">
+						<input type="color" id="color"  onchange="plot();" />
+					</div>
+				</div>
+
+				<label for="function">Function to plot: </label>
+				<input id="function" type="text" value="x^2" onchange="plot();" />
+
+				<button onclick="plot();">Plot it!</button>
+			</section>
+
+			<!-- section where we plot the function -->
+			<section id="plot">
+				<div id="myFunction"></div>
+			</section>
+		</div>
+	</body>
+	<script src="./scripts/d3js.min.js"></script>
+	<script src="./scripts/function-plot.js"></script>
+	<script src="./scripts/app.js"></script>
+</html>
