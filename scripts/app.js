@@ -32,7 +32,7 @@ let validate = (f) => {
     }
     for (let index = 0; index < f.length; index++) {
         const ch = f[index];
-        
+        if(ch ===' ') continue;   
         // check if containig alpha except for x 
         if (isAlpha(ch) && ((ch !== 'x' ))) {
             alert(`invalid input ${ch}`);
@@ -43,7 +43,7 @@ let validate = (f) => {
         else if (index !== 0 && !isSign(ch)) {
             let prev = f[index - 1];
             if (prev === 'x' ) {
-                alert(`invalid input : cant enter alpha digits ${prev}${ch}`)
+                alert(`invalid input  ${prev}${ch}`)
                 state = false;
                 break;
             }
